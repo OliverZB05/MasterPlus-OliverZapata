@@ -1,0 +1,327 @@
+body{
+    background-color: rgb(185, 185, 185);
+}
+
+.StyleNavbar{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-areas: "StyleNavbar__ContainerLogo StyleNavbar__ContainerContent";
+    grid-template-columns: 2fr 20fr;
+}
+
+.StyleNavbar__ContainerLogo{
+    grid-area: StyleNavbar__ContainerLogo;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.ContainerLogo__Logo{
+    height: 75px;
+    width: 300px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+    background-image: url("./LogoHeaderMarketPlus.png");
+    background-color: rgba(252, 112, 69, 0);
+    border-radius: 20px;
+}
+
+
+
+.StyleNavbar__ContainerContent{
+    grid-area: StyleNavbar__ContainerContent;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+.ContainerContent__ContainerLinks{
+    height: 70px;
+    width: 650px;
+    position: relative;
+    top: 8px;
+    left: 70px;
+    background-color: rgb(69, 231, 252);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerLinks__Text{
+    cursor: pointer;
+}
+
+.ContainerLinks__Text:hover{
+    color: rgb(57, 56, 56);
+}
+
+
+
+
+/* ------------- Media querys ------------- */
+@media(min-width: 1096px){
+
+    .StyleNavbar{
+        height: 90px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: "StyleNavbar__ContainerLogo StyleNavbar__ContainerContent";
+        grid-template-columns: 2fr 20fr;
+    }
+    
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(0, 0, 255, 0);
+    }
+    
+    .ContainerLogo__Logo{
+        height: 75px;
+        width: 300px;
+        position: relative;
+        top: 8px;
+        left: 20px;
+        background-image: url("./LogoHeaderMarketPlus.png");
+        background-color: rgba(252, 112, 69, 0);
+        border-radius: 20px;
+    }
+    
+    
+    
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(127, 255, 212, 0);
+    }
+    
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 650px;
+        position: relative;
+        top: 8px;
+        left: 70px;
+        background-color: rgba(69, 231, 252, 0);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+
+@media(max-width: 1095px){
+
+    .StyleNavbar{
+        height: 160px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: 
+        " StyleNavbar__ContainerLogo StyleNavbar__ContainerLogo"
+        " StyleNavbar__ContainerContent StyleNavbar__ContainerContent";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 650px;
+        background-color: rgba(69, 231, 252, 0);
+        margin-right: 135px;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+
+@media(max-width: 713px){
+
+    .StyleNavbar{
+        height: 160px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: 
+        " StyleNavbar__ContainerLogo StyleNavbar__ContainerLogo"
+        " StyleNavbar__ContainerContent StyleNavbar__ContainerContent";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 650px;
+        background-color: rgba(69, 231, 252, 0);
+        margin-right: 135px;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+        font-size: 15px;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+
+@media(max-width: 684px){
+
+    .StyleNavbar{
+        height: 160px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: 
+        " StyleNavbar__ContainerLogo StyleNavbar__ContainerLogo"
+        " StyleNavbar__ContainerContent StyleNavbar__ContainerContent";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 650px;
+        background-color: rgba(69, 231, 252, 0);
+        margin-right: 135px;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+        font-size: 13px;
+        margin-top: 8px;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+
+@media(max-width: 632px){
+
+    .StyleNavbar{
+        height: 160px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: 
+        " StyleNavbar__ContainerLogo StyleNavbar__ContainerLogo"
+        " StyleNavbar__ContainerContent StyleNavbar__ContainerContent";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 720px;
+        background-color: rgba(252, 69, 69, 0);
+        margin-right: 135px;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+
+@media(max-width: 524px){
+
+    .StyleNavbar{
+        height: 160px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-areas: 
+        " StyleNavbar__ContainerLogo StyleNavbar__ContainerLogo"
+        " StyleNavbar__ContainerContent StyleNavbar__ContainerContent";
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .StyleNavbar__ContainerLogo{
+        grid-area: StyleNavbar__ContainerLogo;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .StyleNavbar__ContainerContent{
+        grid-area: StyleNavbar__ContainerContent;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    .ContainerContent__ContainerLinks{
+        height: 70px;
+        width: 720px;
+        background-color: rgba(252, 69, 69, 0);
+        margin-right: 135px;
+    }
+    
+    .ContainerLinks__Text{
+        cursor: pointer;
+        font-size: 9px;
+        margin-top: 15px;
+    }
+    
+    .ContainerLinks__Text:hover{
+        color: rgb(57, 56, 56);
+    }
+}
+/* ------------- 📘Media querys📘 ------------- */
+
+
